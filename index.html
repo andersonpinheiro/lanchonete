@@ -105,24 +105,30 @@
 
     <!-- Seção do resumo do pedido -->
     <section id="pedido">
-      <h2>📝 Resumo do Pedido</h2>
-      <div id="resumo"></div> <!-- Aqui aparece o resumo dos itens do carrinho -->
+    <h2>🧾 Finalizar Pedido</h2>
 
-      <!-- Seleção da forma de pagamento -->
-      <label for="pagamento">Forma de pagamento:</label>
-      <select id="pagamento">
-        <option value="Dinheiro">Dinheiro</option>
-        <option value="Pix">Pix</option>
-        <option value="Cartão">Cartão</option>
-      </select>
+    <div id="resumo" class="resumo-pedido"></div>
 
-      <!-- Campo para observações do pedido -->
-      <label for="obs">Observações:</label>
+    <div class="total">
+      <strong>Total:</strong> <span id="valor-total">R$ 0,00</span>
+    </div>
+
+    <div class="pagamento">
+      <h3>💳 Forma de Pagamento</h3>
+      <div class="opcoes-pagamento">
+        <label><input type="radio" name="pagamento" value="Dinheiro" checked> Dinheiro</label>
+        <label><input type="radio" name="pagamento" value="Pix"> Pix</label>
+        <label><input type="radio" name="pagamento" value="Cartão"> Cartão</label>
+      </div>
+    </div>
+
+    <div class="observacoes">
+      <h3>📝 Observações</h3>
       <textarea id="obs" placeholder="Ex: sem cebola, pouco ketchup..."></textarea>
+    </div>
 
-      <!-- Botão para enviar o pedido via WhatsApp -->
-      <button onclick="enviarPedido()">Enviar Pedido</button>
-    </section>
+    <button id="btn-enviar" onclick="enviarPedido()">📲 Enviar Pedido</button>
+  </section>
   </main>
 
   <!-- Rodapé do site -->
