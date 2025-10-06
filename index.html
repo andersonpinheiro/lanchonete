@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neide Lanches</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <title>Neide Lanches</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o CSS -->
 </head>
 <body>
+  <!-- Cabeçalho do site -->
   <header>
-    <h1>🍔 Neide Lanches</h1>
-    <p>Peça já o seu lanche! Contato: 3585-4716 / 99778-7201</p>
+    <h1>🍔 Neide Lanches</h1> <!-- Título principal -->
+    <p>Peça já o seu lanche! Contato: 3585-4716 / 99778-7201</p> <!-- Informações de contato -->
   </header>
 
-<div id="icone-carrinho">🛒 <span id="contador">0</span></div>
+  <!-- Ícone do carrinho fixo na tela com contador de itens -->
+  <div id="icone-carrinho">🛒 <span id="contador">0</span></div>
 
   <main>
+    <!-- Seção de lanches -->
     <section>
       <h2>Lanches</h2>
-
-      <div class="cardapio-item"><h3>Cachorro Quente Simples</h3><p>Salsicha, alface, tomate</p><p>R$ 7,00</p><button onclick="adicionarAoCarrinho('Cachorro Quente Simples', 7)">Adicionar</button></div>
+      <!-- Cada div representa um item do cardápio com botão para adicionar ao carrinho -->
+      <!-- Exemplo de item: -->
+      <div class="cardapio-item">
+        <h3>Cachorro Quente Simples</h3>
+        <p>Salsicha, alface, tomate</p>
+        <p>R$ 7,00</p>
+        <button onclick="adicionarAoCarrinho('Cachorro Quente Simples', 7)">Adicionar</button>
+      </div>
 
       <div class="cardapio-item"><h3>Cachorro Quente Especial</h3><p>2 Salsichas, alface, tomate, milho, batata palha</p><p>R$ 10,00</p><button onclick="adicionarAoCarrinho('Cachorro Quente Especial', 10)">Adicionar</button></div>
 
@@ -75,10 +84,15 @@
       <div class="cardapio-item"><h3>X-Frango com Calabresa</h3><p>Frango, calabresa, bacon, azeitona, cebola, alface, tomate, milho</p><p>R$ 22,00</p><button onclick="adicionarAoCarrinho('X-Frango com Calabresa', 22)">Adicionar</button></div>
     </section>
 
+    <!-- Seção de bebidas -->
     <section>
       <h2>Bebidas</h2>
-
-      <div class="cardapio-item"><h3>Coca-Cola (2 litros)</h3><p>R$ 12,00</p><button onclick="adicionarAoCarrinho('Coca-Cola 2L', 12)">Adicionar</button></div>
+      <!-- Itens de bebida com botão para adicionar ao carrinho -->
+      <div class="cardapio-item">
+        <h3>Coca-Cola (2 litros)</h3>
+        <p>R$ 12,00</p>
+        <button onclick="adicionarAoCarrinho('Coca-Cola 2L', 12)">Adicionar</button>
+      </div>
 
       <div class="cardapio-item"><h3>Fanta ou Guaraná (2 litros)</h3><p>R$ 10,00</p><button onclick="adicionarAoCarrinho('Fanta / Guaraná 2L', 10)">Adicionar</button></div>
 
@@ -89,10 +103,12 @@
       <div class="cardapio-item"><h3>Suco Nativa</h3><p>R$ 3,00</p><button onclick="adicionarAoCarrinho('Suco Nativa', 3)">Adicionar</button></div>
     </section>
 
+    <!-- Seção do resumo do pedido -->
     <section id="pedido">
       <h2>📝 Resumo do Pedido</h2>
-      <div id="resumo"></div>
+      <div id="resumo"></div> <!-- Aqui aparece o resumo dos itens do carrinho -->
 
+      <!-- Seleção da forma de pagamento -->
       <label for="pagamento">Forma de pagamento:</label>
       <select id="pagamento">
         <option value="Dinheiro">Dinheiro</option>
@@ -100,17 +116,21 @@
         <option value="Cartão">Cartão</option>
       </select>
 
+      <!-- Campo para observações do pedido -->
       <label for="obs">Observações:</label>
       <textarea id="obs" placeholder="Ex: sem cebola, pouco ketchup..."></textarea>
 
+      <!-- Botão para enviar o pedido via WhatsApp -->
       <button onclick="enviarPedido()">Enviar Pedido</button>
     </section>
   </main>
 
+  <!-- Rodapé do site -->
   <footer>
     <p>🍔 Neide Lanches - Todos os direitos reservados</p>
   </footer>
 
+  <!-- Importa o JavaScript principal -->
   <script src="script.js"></script>
 </body>
 </html>

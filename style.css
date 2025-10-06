@@ -1,97 +1,98 @@
 body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff8f3;
-      margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif; /* Fonte principal */
+      background: #fff8f3;                 /* Cor de fundo suave */
+      margin: 0;                           /* Remove margens padrão */
+      padding: 0;                          /* Remove espaçamento padrão */
+      color: #333;                         /* Cor padrão do texto */
     }
 
     header {
-      background: #e53935;
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      background: #e53935;                 /* Fundo vermelho */
+      color: white;                        /* Texto branco */
+      text-align: center;                  /* Centraliza o texto */
+      padding: 1.5rem 1rem;                /* Espaçamento interno */
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* Sombra para destaque */
     }
 
-    h1 { margin: 0; }
-    p { margin: 0.5rem 0 0; }
+    h1 { margin: 0; }                         /* Remove margem padrão */
+
+    p { margin: 0.5rem 0 0; }                 /* Espaçamento superior */
 
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 800px;                    /* Largura máxima */
+      margin: 2rem auto;                   /* Centraliza na tela */
+      padding: 0 1rem;                     /* Espaçamento lateral */
     }
 
     h2 {
-      color: #d32f2f;
-      border-left: 6px solid #ff9800;
-      padding-left: 10px;
-      margin-top: 2rem;
+      color: #d32f2f;                      /* Cor vermelha */
+      border-left: 6px solid #ff9800;      /* Barra laranja à esquerda */
+      padding-left: 10px;                  /* Espaço entre barra e texto */
+      margin-top: 2rem;                    /* Espaço acima */
     }
 
     .cardapio-item {
-      background: white;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 1rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: white;                   /* Fundo branco */
+      border-radius: 12px;                 /* Bordas arredondadas */
+      padding: 1rem;                       /* Espaçamento interno */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra leve */
+      margin-bottom: 1rem;                 /* Espaço entre itens */
+      transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
     }
 
     .cardapio-item:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transform: scale(1.02);              /* Aumenta levemente */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra mais forte */
     }
 
     button {
-      background: #ff9800;
-      border: none;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
+      background: #ff9800;                 /* Fundo laranja */
+      border: none;                        /* Sem borda */
+      color: white;                        /* Texto branco */
+      padding: 8px 14px;                   /* Espaçamento interno */
+      border-radius: 8px;                  /* Bordas arredondadas */
+      cursor: pointer;                     /* Cursor de mãozinha */
+      font-weight: 600;                    /* Texto em negrito */
     }
 
-    button:hover { background: #e68900; }
+    button:hover { background: #e68900; }      /* Laranja mais escuro */
 
     #pedido {
-      background: #fff3e0;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-top: 2rem;
+      background: #fff3e0;                 /* Fundo bege */
+      border-radius: 12px;                 /* Bordas arredondadas */
+      padding: 1rem;                       /* Espaçamento interno */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra leve */
+      margin-top: 2rem;                    /* Espaço acima */
     }
 
     #icone-carrinho {
-      position: fixed;
-      top: 15px;
-      right: 20px;
-      background: #ff9800;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 18px;
-      font-weight: 600;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: fixed;                     /* Fixa na tela */
+      bottom: 15px;                           /* Distância do topo */
+      right: 20px;                         /* Distância da direita */
+      background: #ff9800;                 /* Fundo laranja */
+      color: white;                        /* Ícone/texto branco */
+      padding: 8px 14px;                   /* Espaçamento interno */
+      border-radius: 20px;                 /* Bordas arredondadas (pílula) */
+      font-size: 18px;                     /* Tamanho do ícone/texto */
+      font-weight: 600;                    /* Negrito */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra para destaque */
     }
 
     .notificacao {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #43a047;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      animation: aparecer 0.3s ease;
+      position: fixed;                     /* Fixa na tela */
+      bottom: 20px;                        /* Distância do rodapé */
+      right: 20px;                         /* Distância da direita */
+      background: #43a047;                 /* Fundo verde */
+      color: white;                        /* Texto branco */
+      padding: 10px 16px;                  /* Espaçamento interno */
+      border-radius: 8px;                  /* Bordas arredondadas */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra leve */
+      animation: aparecer 0.3s ease;       /* Animação de entrada */
     }
 
     @keyframes aparecer {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(10px); } /* Começa invisível e abaixo */
+      to { opacity: 1; transform: translateY(0); }      /* Fica visível e sobe */
     }
 
     #icone-carrinho {
