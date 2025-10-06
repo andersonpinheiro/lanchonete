@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neide Lanches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍔 Neide Lanches</h1>
+    <p>Peça já o seu lanche! Contato: 3585-4716 / 99778-7201</p>
+  </header>
+
+<div id="icone-carrinho">🛒 <span id="contador">0</span></div>
+
+  <main>
+    <section>
+      <h2>Lanches</h2>
+
+      <div class="cardapio-item"><h3>Cachorro Quente Simples</h3><p>Salsicha, alface, tomate</p><p>R$ 7,00</p><button onclick="adicionarAoCarrinho('Cachorro Quente Simples', 7)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Cachorro Quente Especial</h3><p>2 Salsichas, alface, tomate, milho, batata palha</p><p>R$ 10,00</p><button onclick="adicionarAoCarrinho('Cachorro Quente Especial', 10)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Cachorro Quente Especial 2</h3><p>2 Salsichas, alface, tomate, milho, batata palha, bacon</p><p>R$ 13,00</p><button onclick="adicionarAoCarrinho('Cachorro Quente Especial 2', 13)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Burguer</h3><p>Hambúrguer, presunto, muçarela</p><p>R$ 9,50</p><button onclick="adicionarAoCarrinho('X-Burguer', 9.5)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Misto Quente</h3><p>Presunto, muçarela</p><p>R$ 13,00</p><button onclick="adicionarAoCarrinho('Misto Quente', 13)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Misto Tudo</h3><p>Hambúrguer, bacon, ovo, presunto, muçarela, batata palha</p><p>R$ 17,00</p><button onclick="adicionarAoCarrinho('Misto Tudo', 17)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Bauru</h3><p>Tomate, presunto, muçarela</p><p>R$ 11,00</p><button onclick="adicionarAoCarrinho('Bauru', 11)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Vegetariano</h3><p>Ovo, muçarela, alface, tomate</p><p>R$ 11,00</p><button onclick="adicionarAoCarrinho('X-Vegetariano', 11)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Rubão</h3><p>Contrafilé, lombo, frango, hambúrguer, bacon, ovo, catupiry, azeitona, presunto, alface, tomate, milho, batata palha</p><p>R$ 28,00</p><button onclick="adicionarAoCarrinho('X-Rubão', 28)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Salada</h3><p>Hambúrguer, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 12,00</p><button onclick="adicionarAoCarrinho('X-Salada', 12)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Catupiry</h3><p>Hambúrguer, catupiry, presunto, muçarela, alface, milho, batata palha</p><p>R$ 14,00</p><button onclick="adicionarAoCarrinho('X-Catupiry', 14)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Bacon</h3><p>Hambúrguer, bacon, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 15,00</p><button onclick="adicionarAoCarrinho('X-Bacon', 15)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Egg / Americano</h3><p>Hambúrguer, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 13,00</p><button onclick="adicionarAoCarrinho('X-Egg / Americano', 13)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Azeitonado</h3><p>Hambúrguer, azeitona, presunto, muçarela, alface, milho, batata palha</p><p>R$ 15,00</p><button onclick="adicionarAoCarrinho('X-Azeitonado', 15)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Tudo</h3><p>Hambúrguer, salsicha, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 17,00</p><button onclick="adicionarAoCarrinho('X-Tudo', 17)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Duplo</h3><p>2 Hambúrgueres, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 19,00</p><button onclick="adicionarAoCarrinho('X-Duplo', 19)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Especial</h3><p>Lombo, contrafilé, frango, bacon, ovo, presunto, muçarela, alface, tomate, milho</p><p>R$ 25,00</p><button onclick="adicionarAoCarrinho('X-Especial', 25)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Churrasco</h3><p>Contrafilé, muçarela, alface, tomate</p><p>R$ 23,00</p><button onclick="adicionarAoCarrinho('Churrasco', 23)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Churrasco Tudo</h3><p>Contrafilé, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 25,00</p><button onclick="adicionarAoCarrinho('Churrasco Tudo', 25)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Lombo</h3><p>Lombo, muçarela, alface, tomate, milho, batata palha</p><p>R$ 18,00</p><button onclick="adicionarAoCarrinho('X-Lombo', 18)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Lombo Tudo</h3><p>Lombo, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 20,00</p><button onclick="adicionarAoCarrinho('X-Lombo Tudo', 20)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Bolinha</h3><p>Hambúrguer, frango, bacon, ovo, muçarela, alface, tomate, milho, batata palha</p><p>R$ 19,00</p><button onclick="adicionarAoCarrinho('X-Bolinha', 19)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Frango</h3><p>Frango, muçarela, alface, tomate, milho, batata palha</p><p>R$ 17,00</p><button onclick="adicionarAoCarrinho('X-Frango', 17)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Frango Tudo</h3><p>Frango, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 20,00</p><button onclick="adicionarAoCarrinho('X-Frango Tudo', 20)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Salada Calabresa</h3><p>Hambúrguer, calabresa, cebola, presunto, muçarela, alface, tomate, milho, batata palha</p><p>R$ 15,00</p><button onclick="adicionarAoCarrinho('X-Salada Calabresa', 15)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Calabresa</h3><p>Calabresa, muçarela, alface, tomate, milho, batata palha</p><p>R$ 13,00</p><button onclick="adicionarAoCarrinho('X-Calabresa', 13)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Calabresa Tudo</h3><p>Hambúrguer, calabresa, bacon, ovo, cebola, presunto, muçarela, alface, tomate, batata palha</p><p>R$ 17,00</p><button onclick="adicionarAoCarrinho('X-Calabresa Tudo', 17)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>X-Frango com Calabresa</h3><p>Frango, calabresa, bacon, azeitona, cebola, alface, tomate, milho</p><p>R$ 22,00</p><button onclick="adicionarAoCarrinho('X-Frango com Calabresa', 22)">Adicionar</button></div>
+    </section>
+
+    <section>
+      <h2>Bebidas</h2>
+
+      <div class="cardapio-item"><h3>Coca-Cola (2 litros)</h3><p>R$ 12,00</p><button onclick="adicionarAoCarrinho('Coca-Cola 2L', 12)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Fanta ou Guaraná (2 litros)</h3><p>R$ 10,00</p><button onclick="adicionarAoCarrinho('Fanta / Guaraná 2L', 10)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Refrigerante Lata</h3><p>R$ 5,00</p><button onclick="adicionarAoCarrinho('Refrigerante Lata', 5)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Cerveja Lata</h3><p>R$ 5,00</p><button onclick="adicionarAoCarrinho('Cerveja Lata', 5)">Adicionar</button></div>
+
+      <div class="cardapio-item"><h3>Suco Nativa</h3><p>R$ 3,00</p><button onclick="adicionarAoCarrinho('Suco Nativa', 3)">Adicionar</button></div>
+    </section>
+
+    <section id="pedido">
+      <h2>📝 Resumo do Pedido</h2>
+      <div id="resumo"></div>
+
+      <label for="pagamento">Forma de pagamento:</label>
+      <select id="pagamento">
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Pix">Pix</option>
+        <option value="Cartão">Cartão</option>
+      </select>
+
+      <label for="obs">Observações:</label>
+      <textarea id="obs" placeholder="Ex: sem cebola, pouco ketchup..."></textarea>
+
+      <button onclick="enviarPedido()">Enviar Pedido</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>🍔 Neide Lanches - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
